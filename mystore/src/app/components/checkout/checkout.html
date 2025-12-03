@@ -1,0 +1,36 @@
+<h2>Checkout</h2>
+
+<form (ngSubmit)="submitForm()" class="checkout-form">
+  
+  <label for="name">Full Name</label>
+  <input
+    id="name"
+    type="text"
+    [(ngModel)]="name"
+    name="name"
+    required
+    minlength="3"
+  />
+
+  <label for="address">Address</label>
+  <input
+    id="address"
+    type="text"
+    [(ngModel)]="address"
+    name="address"
+    required
+  />
+
+  <label for="card">Credit Card Number</label>
+  <input
+    id="card"
+    type="text"
+    [(ngModel)]="card"
+    name="card"
+    required
+    minlength="12"
+  />
+
+  <button type="submit">Submit Order</button>
+
+</form>

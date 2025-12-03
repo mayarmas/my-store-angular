@@ -1,0 +1,38 @@
+.details {
+  display: flex;
+  gap: 25px;
+  padding: 20px;
+}
+
+.details img {
+  width: 380px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.price {
+  color: #009688;
+  font-weight: bold;
+}
+
+button {
+  padding: 8px 14px;
+  background: #009688;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back {
+  margin-top: 10px;
+  display: inline-block;
+  color: #555;
+}

@@ -1,0 +1,23 @@
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 350px;
+  margin-top: 20px;
+}
+
+.checkout-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  background: #009688;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}

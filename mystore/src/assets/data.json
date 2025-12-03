@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "price": 899,
+    "description": "High performance laptop",
+    "url": "assets/images/laptop.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Headphones",
+    "price": 199,
+    "description": "Noise-cancelling headphones",
+    "url": "assets/images/headphones.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Camera",
+    "price": 499,
+    "description": "Professional grade camera",
+    "url": "assets/images/camera.jpg"
+  }
+]

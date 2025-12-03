@@ -1,0 +1,30 @@
+<h2>Your Cart</h2>
+
+<div *ngIf="cart.items.length === 0" class="empty">
+  Your cart is empty.
+  <a routerLink="/">Go Shopping</a>
+</div>
+
+<div *ngFor="let item of cart.items" class="cart-item">
+  <img [src]="item.product.url" alt="{{ item.product.name }}" />
+
+  <div class="info">
+    <h3>{{ item.product.name }}</h3>
+    <p class="price">\${{ item.product.price }}</p>
+
+    <label>Quantity:</label>
+    <input
+      type="number"
+      [ngModel]="item.quantity"
+      (ngModelChange)="updateQty(item.product.id, $event)"
+      min="1"
+    />
+
+    <button (click)="remove(item.product.id)" class="remove">Remove</button>
+  </div>
+</div>
+
+<div *ngIf="cart.items.length > 0" class="cart-summary">
+  <h3>Total: \${{ total() }}</h3>
+  <a routerLink="/checkout" class="checkout-btn">Proceed to Checkout</a>
+</div>
